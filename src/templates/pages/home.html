@@ -1,6 +1,28 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
+
+<section id="home" class="py-5">
+    <div class="container  bg-gradient-to-b from-teal-600 to to-teal-700 flex flex-wrap items-center justify-center mx-auto mt-10 md:px-12 md:flex-row">
+        <div class="mb-14 lg:mb-0 lg:w-1/2">
+            <h1 class="max-w-xl text-[2.9rem] leading-none text-teal-50 font-extrabold font-san text-center lg:text-5xl lg:text-left lg:leading-tight mb-5">
+                <!-- Education is learning what you didn't even know you didn't know. -->
+                There is always more to learn.
+            </h1>
+            <p class="max-w-xl text-center text-teal-50 lg:text-left lg:max-w-md">
+                We are different. We improve efficiency and competitvenes of students, improve convenience and reduce impact of geographic barriers. 
+            </p>
+        </div>
+        <div class="lg:w-1/2">
+            <div class="container flex flex-wrap items-center justify-center mx-auto mt-10 md:mb-10 md:px-12 md:flex-row">
+                <img class="ml-auto rounded" src="{% static 'img/hero.jpg' %} " alt="hero Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <div class="flex h-screen justify-center items-center text-white">
     <h1 class="text-xl font-bold">Let Learn</h1>
 </div>
