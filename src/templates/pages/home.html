@@ -20,99 +20,349 @@
         </div>
     </div>
 </section>
-<div class="container w-[70%] bg-teal-50 flex flex-wrap items-center justify-center mx-auto mt-1 px-2 md:flex-row rounded-3xl">
+<div class="container w-[70%] bg-teal-50 flex flex-wrap items-center justify-center mx-auto mt-2 mb-5 px-2 md:flex-row rounded-3xl">
     <section class="w-full h-10 flex items-center">
         <span class="w-10 h-full flex items-center">
             <i class="fa-solid fa-magnifying-glass text-teal-800"></i>
         </span>
         <input type="text" class="w-full bg-teal-50 h-full font-medium md:pl-2 focus:outline-none" placeholder="Find subject">
-        <button class="w-28 h-8 bg-amber-700 text-teal-50 hover:bg-zinc-950 duration-500 flex justify-center items-center rounded-2xl">Search</button>
+        <button class="w-28 h-8 bg-red-700 text-teal-50 hover:bg-teal-950 duration-500 flex justify-center items-center rounded-2xl">Search</button>
     </section>
 </div>
 
+<div class="w-full bg-teal-700 p-6 ">
+    <h1 class="font-bold text-3xl text-center mb-4 text-teal-50">Prime Categories</h1>
+</div>
 
 <div class="flex h-screen justify-center items-center text-teal-50">
     <h1 class="text-xl font-bold">Let Learn</h1>
 </div>
 
-<div class="">
-    <h1 class="font-bold text-3xl text-center mb-4 text-teal-50">Popular Topics</h1>
-    <div class="flex">
-        <div class="w-1/12">
-        </div>
-    <div class="container mx-5 w-10/12 ">
-        <div class="responsive">
-            <img class="p-3 w-[250px] h-[250px]" src="{% static 'img/physics.jpg' %}" alt="">
-            <img class="p-3 w-[250px] h-[250px]" src="{% static 'img/physics.jpg' %}" alt="">
-            <img class="p-3 w-[250px] h-[250px]" src="{% static 'img/physics.jpg' %}" alt="">
-            <img class="p-3 w-[250px] h-[250px]" src="{% static 'img/physics.jpg' %}" alt="">
-            <img class="p-3 w-[250px] h-[250px]" src="{% static 'img/physics.jpg' %}" alt="">
-            <img class="p-3 w-[250px] h-[250px]" src="{% static 'img/physics.jpg' %}" alt="">
-            <img class="p-3 w-[250px] h-[250px]" src="{% static 'img/physics.jpg' %}" alt="">
-            <img class="p-3 w-[250px] h-[250px]" src="{% static 'img/physics.jpg' %}" alt="">
-            
-        </div>
-    </div>
-    <div class="w-1/12">
+<div class="flex flex-col justify-center items-center mx-50 my-10">
+    <h1 class="font-bold text-3xl text-center mb-5 text-teal-50">Popular Topics</h1>
 
-    </div>
+
+    <div class="glider-contain">
+        <div id="glider" class="glider">
+            <div class="font-sans flex flex-col w-70 p-4 border-teal-600 border-2 mx-0 my-5 shadow-lg relative">
+
+                <span class="absolute top-5 left-5 w-16 h-6 bg-red-500 flex justify-center items-center text-sm tracking-wider z-[100] rounded">-20%</span>
+                <!-- p-image-container  -->
+                <div>
+                    <!-- p-img  -->
+                    <div>
+                        <a href="">
+                            <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- p-box-text  -->
+                    <div class="mt-1">
+                        <!-- category  -->
+                        <div class="flex flex-initial items-center flex-wrap">
+                            <span class="text-teal-50 text-base mx-0 my-0" >Biology</span>
+                        </div>
+                        <!-- prudct-title  -->
+                        <a class="text-teal-50 font-semibold no-underline hover:text-red-500 transition-all ease-in-out duration-300 " href="#">
+                            Human Digestive System
+                        </a>
+                        <!-- price -buy  -->
+                        <div class="flex justify-between items-center mt-2">
+                            <!-- p-price  -->
+                            <span class="text-xl text-teal-950 font-bold">2000 xaf</span>
+                            <a class="text-red-600 text-xl font-bold hover:underline hover:text-teal-100" href="#">Learn</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="font-sans flex flex-col w-70 p-4 border-teal-600 border-2 mx-0 my-5 shadow-lg relative">
+
+                <span class="absolute top-5 left-5 w-16 h-6 bg-red-500 flex justify-center items-center text-sm tracking-wider z-[100] rounded">-20%</span>
+                <!-- p-image-container  -->
+                <div>
+                    <!-- p-img  -->
+                    <div>
+                        <a href="">
+                            <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- p-box-text  -->
+                    <div class="mt-1">
+                        <!-- category  -->
+                        <div class="flex flex-initial items-center flex-wrap">
+                            <span class="text-teal-50 text-base mx-0 my-0" >Biology</span>
+                        </div>
+                        <!-- prudct-title  -->
+                        <a class="text-teal-50 font-semibold no-underline hover:text-red-500 transition-all ease-in-out duration-300 " href="#">
+                            Human Digestive System
+                        </a>
+                        <!-- price -buy  -->
+                        <div class="flex justify-between items-center mt-2">
+                            <!-- p-price  -->
+                            <span class="text-xl text-teal-950 font-bold">2000 xaf</span>
+                            <a class="text-red-600 text-xl font-bold hover:underline hover:text-teal-100" href="#">Learn</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="font-sans flex flex-col w-70 p-4 border-teal-600 border-2 mx-0 my-5 shadow-lg relative">
+
+                <span class="absolute top-5 left-5 w-16 h-6 bg-red-500 flex justify-center items-center text-sm tracking-wider z-[100] rounded">-20%</span>
+                <!-- p-image-container  -->
+                <div>
+                    <!-- p-img  -->
+                    <div>
+                        <a href="">
+                            <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- p-box-text  -->
+                    <div class="mt-1">
+                        <!-- category  -->
+                        <div class="flex flex-initial items-center flex-wrap">
+                            <span class="text-teal-50 text-base mx-0 my-0" >Biology</span>
+                        </div>
+                        <!-- prudct-title  -->
+                        <a class="text-teal-50 font-semibold no-underline hover:text-red-500 transition-all ease-in-out duration-300 " href="#">
+                            Human Digestive System
+                        </a>
+                        <!-- price -buy  -->
+                        <div class="flex justify-between items-center mt-2">
+                            <!-- p-price  -->
+                            <span class="text-xl text-teal-950 font-bold">2000 xaf</span>
+                            <a class="text-red-600 text-xl font-bold hover:underline hover:text-teal-100" href="#">Learn</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="font-sans flex flex-col w-70 p-4 border-teal-600 border-2 mx-0 my-5 shadow-lg relative">
+
+                <span class="absolute top-5 left-5 w-16 h-6 bg-red-500 flex justify-center items-center text-sm tracking-wider z-[100] rounded">-20%</span>
+                <!-- p-image-container  -->
+                <div>
+                    <!-- p-img  -->
+                    <div>
+                        <a href="">
+                            <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- p-box-text  -->
+                    <div class="mt-1">
+                        <!-- category  -->
+                        <div class="flex flex-initial items-center flex-wrap">
+                            <span class="text-teal-50 text-base mx-0 my-0" >Biology</span>
+                        </div>
+                        <!-- prudct-title  -->
+                        <a class="text-teal-50 font-semibold no-underline hover:text-red-500 transition-all ease-in-out duration-300 " href="#">
+                            Human Digestive System
+                        </a>
+                        <!-- price -buy  -->
+                        <div class="flex justify-between items-center mt-2">
+                            <!-- p-price  -->
+                            <span class="text-xl text-teal-950 font-bold">2000 xaf</span>
+                            <a class="text-red-600 text-xl font-bold hover:underline hover:text-teal-100" href="#">Learn</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="font-sans flex flex-col w-70 p-4 border-teal-600 border-2 mx-0 my-5 shadow-lg relative">
+
+                <span class="absolute top-5 left-5 w-16 h-6 bg-red-500 flex justify-center items-center text-sm tracking-wider z-[100] rounded">-20%</span>
+                <!-- p-image-container  -->
+                <div>
+                    <!-- p-img  -->
+                    <div>
+                        <a href="">
+                            <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- p-box-text  -->
+                    <div class="mt-1">
+                        <!-- category  -->
+                        <div class="flex flex-initial items-center flex-wrap">
+                            <span class="text-teal-50 text-base mx-0 my-0" >Biology</span>
+                        </div>
+                        <!-- prudct-title  -->
+                        <a class="text-teal-50 font-semibold no-underline hover:text-red-500 transition-all ease-in-out duration-300 " href="#">
+                            Human Digestive System
+                        </a>
+                        <!-- price -buy  -->
+                        <div class="flex justify-between items-center mt-2">
+                            <!-- p-price  -->
+                            <span class="text-xl text-teal-950 font-bold">2000 xaf</span>
+                            <a class="text-red-600 text-xl font-bold hover:underline hover:text-teal-100" href="#">Learn</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="font-sans flex flex-col w-70 p-4 border-teal-600 border-2 mx-0 my-5 shadow-lg relative">
+
+                <span class="absolute top-5 left-5 w-16 h-6 bg-red-500 flex justify-center items-center text-sm tracking-wider z-[100] rounded">-20%</span>
+                <!-- p-image-container  -->
+                <div>
+                    <!-- p-img  -->
+                    <div>
+                        <a href="">
+                            <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- p-box-text  -->
+                    <div class="mt-1">
+                        <!-- category  -->
+                        <div class="flex flex-initial items-center flex-wrap">
+                            <span class="text-teal-50 text-base mx-0 my-0" >Biology</span>
+                        </div>
+                        <!-- prudct-title  -->
+                        <a class="text-teal-50 font-semibold no-underline hover:text-red-500 transition-all ease-in-out duration-300 " href="#">
+                            Human Digestive System
+                        </a>
+                        <!-- price -buy  -->
+                        <div class="flex justify-between items-center mt-2">
+                            <!-- p-price  -->
+                            <span class="text-xl text-teal-950 font-bold">2000 xaf</span>
+                            <a class="text-red-600 text-xl font-bold hover:underline hover:text-teal-100" href="#">Learn</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="font-sans flex flex-col w-70 p-4 border-teal-600 border-2 mx-0 my-5 shadow-lg relative">
+
+                <span class="absolute top-5 left-5 w-16 h-6 bg-red-500 flex justify-center items-center text-sm tracking-wider z-[100] rounded">-20%</span>
+                <!-- p-image-container  -->
+                <div>
+                    <!-- p-img  -->
+                    <div>
+                        <a href="">
+                            <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- p-box-text  -->
+                    <div class="mt-1">
+                        <!-- category  -->
+                        <div class="flex flex-initial items-center flex-wrap">
+                            <span class="text-teal-50 text-base mx-0 my-0" >Biology</span>
+                        </div>
+                        <!-- prudct-title  -->
+                        <a class="text-teal-50 font-semibold no-underline hover:text-red-500 transition-all ease-in-out duration-300 " href="#">
+                            Human Digestive System
+                        </a>
+                        <!-- price -buy  -->
+                        <div class="flex justify-between items-center mt-2">
+                            <!-- p-price  -->
+                            <span class="text-xl text-teal-950 font-bold">2000 xaf</span>
+                            <a class="text-red-600 text-xl font-bold hover:underline hover:text-teal-100" href="#">Learn</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="font-sans flex flex-col w-70 p-4 border-teal-600 border-2 mx-0 my-5 shadow-lg relative">
+
+                <span class="absolute top-5 left-5 w-16 h-6 bg-red-500 flex justify-center items-center text-sm tracking-wider z-[100] rounded">-20%</span>
+                <!-- p-image-container  -->
+                <div>
+                    <!-- p-img  -->
+                    <div>
+                        <a href="">
+                            <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- p-box-text  -->
+                    <div class="mt-1">
+                        <!-- category  -->
+                        <div class="flex flex-initial items-center flex-wrap">
+                            <span class="text-teal-50 text-base mx-0 my-0" >Biology</span>
+                        </div>
+                        <!-- prudct-title  -->
+                        <a class="text-teal-50 font-semibold no-underline hover:text-red-500 transition-all ease-in-out duration-300 " href="#">
+                            Human Digestive System
+                        </a>
+                        <!-- price -buy  -->
+                        <div class="flex justify-between items-center mt-2">
+                            <!-- p-price  -->
+                            <span class="text-xl text-teal-950 font-bold">2000 xaf</span>
+                            <a class="text-red-600 text-xl font-bold hover:underline hover:text-teal-100" href="#">Learn</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+      
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
     </div>
 </div>
+
+
 
 <div class="w-full bg-teal-700 p-6 ">
     <h1 class="font-bold text-3xl text-center mb-4 text-teal-50">Prime Categories</h1>
     <div class="grid grid-cols-3 gap-4 md:hidden">
 
-        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Physics</a>
-        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Biology</a>
-        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Chemistry</a>
-        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Geography</a>
-        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">History</a>
-        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Literature</a>
-        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Mathematic</a>
-        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Economics</a>
+        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Physics</a>
+        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Biology</a>
+        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Chemistry</a>
+        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Geography</a>
+        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">History</a>
+        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Literature</a>
+        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Mathematic</a>
+        <a href="#" class="bg-transparent border-2 rounded-xl text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Economics</a>
         
     </div>
     <div class="hidden md:block">
         <div class="flex flex-wrap justify-center ">
             <div class="flex flex-col bg-teal-50 rounded-lg shadow-md  m-10  ">
                 <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/physics.jpg' %}" alt="">
-                <a href="#" class="bg-amber-400 text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Physics</a>
+                <a href="#" class="bg-red-400 text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Physics</a>
             </div>
             
             <div class="flex flex-col bg-teal-50 rounded-lg shadow-md m-10">
                 <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/biology.jpg' %}" alt="">
-                <a href="#" class="bg-amber-400 text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Biology</a>
+                <a href="#" class="bg-red-400 text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Biology</a>
             </div>
             
             <div class="flex flex-col bg-teal-50 rounded-lg shadow-md m-10">
                 <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/chemistry.jpg' %}" alt="">
-                <a href="#" class="bg-amber-400 text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Chemistry</a>
+                <a href="#" class="bg-red-400 text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Chemistry</a>
             </div>
             
             <div class="flex flex-col bg-teal-50 rounded-lg shadow-md m-10">
                 <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/geography.jpg' %}" alt="">
-                <a href="#" class="bg-amber-400 text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Geography</a>
+                <a href="#" class="bg-red-400 text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Geography</a>
             </div>
             
             <div class="flex flex-col bg-teal-50 rounded-lg shadow-md m-10">
                 <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/history.jpg' %}" alt="">
-                <a href="#" class="bg-amber-400 text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">History</a>
+                <a href="#" class="bg-red-400 text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">History</a>
             </div>
             
             <div class="flex flex-col bg-teal-50 rounded-lg shadow-md m-10">
                 <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/literature.jpg' %}" alt="">
-                <a href="#" class="bg-amber-400 text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Literature</a>
+                <a href="#" class="bg-red-400 text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Literature</a>
             </div>
             
             <div class="flex flex-col bg-teal-50 rounded-lg shadow-md m-10">
                 <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/math.jpg' %}" alt="">
-                <a href="#" class="bg-amber-400 text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Mathematic</a>
+                <a href="#" class="bg-red-400 text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Mathematic</a>
             </div>
             
             <div class="flex flex-col bg-teal-50 rounded-lg shadow-md m-10 ">
                 <img class="md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] object-cover" src="{% static 'img/economics.jpg' %}" alt="">
-                <a href="#" class="bg-amber-400 text-teal-50 p-3 text-center hover:bg-zinc-950 transition-all duration-500">Economics</a>
+                <a href="#" class="bg-red-400 text-teal-50 p-3 text-center hover:bg-teal-950 transition-all duration-500">Economics</a>
             </div>
         </div>
     </div>
@@ -121,54 +371,17 @@
 <section class="px-3 py-8  bg-teal-500">
     <div class="grid lg:grid-cols-2 item text-center justify-items-center gap-6">
         <div class=" order-2 md:order-1 flex flex-col lg:ml-80 justify-center items-center">
-            <p class="w-full text-center text-4xl font-bold md:text-5xl text-zinc-950">Become A Teacher</p>
-            <p class="mt text-lg md:text-lg text-zinc-950">
+            <p class="w-full text-center text-4xl font-bold md:text-5xl text-teal-950">Become A Teacher</p>
+            <p class="mt text-lg md:text-lg text-teal-950">
                 On Alma, thousands of students are taught by teachers from all around Africa. We offer you with the necessary tools and abilities to teach what you enjoy.
             </p>
-            <button class="text-lg rounded-xl md:text 2xl bg-amber-700 text-teal-50 hover:bg-zinc-950 duration-500 py-2 px-5 mt-2">Start teaching today</button>
+            <button class="text-lg rounded-xl md:text 2xl bg-red-700 text-teal-50 hover:bg-teal-950 duration-500 py-2 px-5 mt-2">Start teaching today</button>
         </div>
         <div class="order-1 md:order-2">
             <img class=" rounded-2xl h-50 w-50 mr-80 object-cover lg:w-[400px] lg:h-[400px]" src="{% static 'img/tutor.jpg' %}" alt="">
         </div>
     </div>
 </section>
+{% include 'head/js.html' %}
 
-<script>
-    $('.responsive').slick({
-  dots: false,
-  infinite: true,
-  speed: 500,
-  nav:true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-</script>
 {% endblock %}
