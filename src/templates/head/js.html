@@ -1,13 +1,42 @@
 {% load static %}
 
-<script src="{% static '/glider.js' %}"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
 <script>
-    new Glider(document.querySelector('.glider'), {
-    slidesToShow: 3,
-    dots: '#dots',
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next'
+    const navLinks = document.querySelector('.nav-links')
+    function Menu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[7%]')
     }
-  });
+</script>
+
+<script>
+    $(".carousel").owlCarousel({
+        margin: 10,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            480: {
+                items: 2,
+                nav: false
+            },
+            768: {
+                items: 3,
+                nav: false
+            },
+            1024: {
+                items: 4,
+                nav: false
+            }
+        }
+    });
 </script>
