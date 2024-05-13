@@ -1,7 +1,8 @@
 {% load static %}
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="{% static '/js/ionicons/ionicons.esm.js' %}"></script>
+<script nomodule src="{% static '/js/ionicons/ionicons.js' %}"></script>
+<script src="{% static '/js/jquery.min.js' %}"></script>
+<script src="{% static '/js/owl.carousel.min.js' %}"></script>
 
 
 
@@ -11,6 +12,30 @@
         e.name = e.name === 'menu' ? 'close' : 'menu'
         navLinks.classList.toggle('top-[7%]')
     }
+</script>
+
+<script>
+    $('.carous').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            480:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1024:{
+                items:4
+            }
+        }
+    })
 </script>
 
 <script>
