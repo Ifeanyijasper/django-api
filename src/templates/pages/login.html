@@ -3,34 +3,69 @@
 
 {% block content %}
 <div class="font-serif box-border flex justify-center items-center min-h-[100vh]">
-    <div class="relative w-[750px] h-[450px] bg-transparent border-2 border-solid border-teal-400 shadow-2xl shadow-teal-200 overflow-hidden ">
-        <span class="absolute top-[-4px] right-0 w-[850px] h-[600px] bg-transparent bg-gradient-to-b from-teal-950 to-teal-300 border-b-2 border-solid border-teal-400 rotate-45 skew-y-12 origin-bottom-right"></span>
-        
-        <div class="absolute top-0 w-[50%] h-[100%] flex flex-col justify-center left-0 pt-0 pr-[60px] pb-0 pl-[40px]">
-            <h2 class="text-[32px] text-red-50 text-center">Login</h2>
-            <form method="#">
+    <div class="relative w-[750px] h-[450px] border-2 border-solid border-teal-300 shadow-2xl shadow-teal-200 overflow-hidden wrapper ">
+        <span class="absolute top-[-4px] right-0 w-[850px] h-[600px] bg-teal-950 border-b-2 border-solid border-teal-400 rotate-[10deg] skew-y-[40deg] origin-bottom-right"></span>
+        <!-- form-box login  -->
+        <div class="absolute top-0 w-[50%] h-[100%] flex flex-col justify-center left-0 pt-0 pr-[60px] pb-0 pl-[40px] ">
+            <h2 class="text-[32px] text-red-50 text-center translate-x-0 active:translate-x-[-120%] duration-700 ease-out">Login</h2>
+            <form method="#" autocomplete="off">
                 <div class="relative w-[100%] h-[50px] my-[25px]">
-                    <input class="w-[100%] h-[100%] bg-transparent text-red-50  outline-none border-b-2 border-solid border-teal-400 appearance-none  focus:outline-none focus:ring-0 focus:text-red-50 focus:border-teal-500 peer peer-placeholder-shown:border-red-100 pr-6" placeholder=""  type="email" required>
-                    <label class="absolute text-[16px] text-teal-400 pointer-events-none duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] left-0 peer-focus:text-teal-400 peer-placeholder-shown:text-red-100 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="">Email</label>
-                    <i class='bx bxs-user absolute top-[50%] right-0 translate-y-[-50%] text-[18px] text-teal-400 peer-focus:text-teal-400  peer-placeholder-shown:text-red-100 '></i>
+                    <input class="w-[100%] h-[100%] bg-transparent text-red-50  outline-none border-b-2 border-solid border-teal-400 appearance-none  focus:outline-none focus:ring-0 focus:text-red-50 focus:border-teal-500 peer peer-placeholder-shown:border-red-100 pr-6" placeholder=""  type="email" id="email" required>
+                    <label class="absolute text-[16px] text-teal-400 pointer-events-none duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] left-0 peer-focus:text-teal-400 peer-placeholder-shown:text-red-100 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="email">Email</label>
+                    <i class='bx bxs-envelope absolute top-[50%] right-0 translate-y-[-50%] text-[18px] text-teal-400 peer-focus:text-teal-400  peer-placeholder-shown:text-red-100 '></i>
                 </div>
                 <div class="relative w-[100%] h-[50px] my-[25px]">
-                    <input class="w-[100%] h-[100%] bg-transparent text-red-50 outline-none border-b-2 border-solid border-teal-400 appearance-none focus:outline-none focus:ring-0 focus:text-white focus:border-teal-500 peer peer-placeholder-shown:border-red-100 pr-6" placeholder=""  type="password" required>
-                    <label class="absolute left-0 text-[16px] text-teal-400 pointer-events-none duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-teal-400 peer-placeholder-shown:text-red-100 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="">Password</label>
+                    <input class="w-[100%] h-[100%] bg-transparent text-red-50 outline-none border-b-2 border-solid border-teal-400 appearance-none focus:outline-none focus:ring-0 focus:text-white focus:border-teal-500 peer peer-placeholder-shown:border-red-100 pr-6" placeholder=""  type="password" id="password" required>
+                    <label class="absolute left-0 text-[16px] text-teal-400 pointer-events-none duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-teal-400 peer-placeholder-shown:text-red-100 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="password">Password</label>
                     <i class='bx bxs-lock-alt absolute top-[50%] right-0 translate-y-[-50%] text-[18px]  text-teal-400 peer-focus:text-teal-400  peer-placeholder-shown:text-red-100' ></i>
                 </div>
-                <button class="relative w-[100%] h-[45px] bg-transparent bg-gradient-to-b from-teal-300 to-teal-950 border-2 border-solid border-teal-400 outline-none rounded-[40px] cursor-pointer text-[16px] text-red-50 font-semibold hover:from-teal-950 hover:to-teal-300" type="submit">Login</button>
+                <button class="relative w-[100%] h-[45px] bg-transparent bg-gradient-to-b from-teal-300 to-teal-950 border-2 border-solid border-teal-400 outline-none rounded-[40px] cursor-pointer text-[16px] text-red-50 font-semibold hover:from-teal-950 hover:to-teal-300" type="submit">Log In</button>
                 <div class="text-[14.5px] text-red-50 text-center mx-[20px] my-[10px]">
-                    <p>Don't have an account? <a class="text-teal-300 no-underline font-semibold hover:underline" href="#">Sign Up</a></p>
+                    <p>Don't have an account? <a class="register text-teal-300 no-underline font-semibold hover:underline" href="">Sign Up</a></p>
                 </div>
             </form>
         </div>
 
-       <div class="absolute top-0 w-[50%] h-[100%] right-0 text-right pt-0 pr-[40px] pb-[60px] pl-[150px] flex flex-col justify-center">
+       <div class="absolute top-0 w-[50%] h-[100%] right-0 text-right pt-0 pr-[40px] pb-[60px] pl-[150px] flex flex-col justify-center ">
         <h2 class="text-[36px] text-teal-50 leading-10 uppercase">Welcome Back!</h2>
-        <p class="text-[16px] ttext-red-50 ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p class="text-[16px] text-red-50 ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
        </div> 
+
+    <!-- Register... -->
+        <!-- bg - animate2  -->
+        <!-- <span class="absolute top-[100%] left-64 w-[850px] h-[700px] bg-teal-950 border-t-2 border-solid border-teal-100 rotate-[-11deg] skew-y-[-41deg] origin-bottom-left"></span> -->
+        <!-- form box login  -->
+        <!-- <div class="absolute top-0 w-[50%] h-[100%] flex flex-col justify-center right-0 pt-0 pr-[40px] pb-0 pl-[60px] hidden">
+            <h2 class="text-[32px] text-teal-100 text-center">Sign Up</h2>
+            <form method="#">
+                <div class="relative w-[100%] h-[50px] my-[25px]">
+                    <input class="w-[100%] h-[100%] bg-transparent text-red-50  outline-none border-b-2 border-solid border-teal-400 appearance-none  focus:outline-none focus:ring-0 focus:text-red-50 focus:border-teal-500 peer peer-placeholder-shown:border-red-100 pr-6" placeholder=""  type="text" required>
+                    <label class="absolute text-[16px] text-teal-400 pointer-events-none duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] left-0 peer-focus:text-teal-400 peer-placeholder-shown:text-red-100 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="">Full Name</label>
+                    <i class='bx bxs-user absolute top-[50%] right-0 translate-y-[-50%] text-[18px] text-teal-400 peer-focus:text-teal-400  peer-placeholder-shown:text-red-100 '></i>
+                </div>
+                <div class="relative w-[100%] h-[50px] my-[25px]">
+                    <input class="w-[100%] h-[100%] bg-transparent text-red-50  outline-none border-b-2 border-solid border-teal-400 appearance-none  focus:outline-none focus:ring-0 focus:text-red-50 focus:border-teal-500 peer peer-placeholder-shown:border-red-100 pr-6" placeholder=""  type="email" required>
+                    <label class="absolute text-[16px] text-teal-400 pointer-events-none duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] left-0 peer-focus:text-teal-400 peer-placeholder-shown:text-red-100 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="">Email</label>
+                    <i class='bx bxs-envelope absolute top-[50%] right-0 translate-y-[-50%] text-[18px] text-teal-400 peer-focus:text-teal-400  peer-placeholder-shown:text-red-100 '></i>
+                </div>
+                <div class="relative w-[100%] h-[50px] my-[25px]">
+                    <input class="w-[100%] h-[100%] bg-transparent text-red-50 outline-none border-b-2 border-solid border-teal-400 appearance-none focus:outline-none focus:ring-0 focus:text-white focus:border-teal-500 peer peer-placeholder-shown:border-red-100 pr-6" placeholder=""  type="password" required>
+                    <label class="absolute left-0 text-[16px] text-teal-400 pointer-events-none duration-300 transform -translate-y-6 scale-75 top-3 z-10 origin-[0] peer-focus:text-teal-400 peer-placeholder-shown:text-red-100 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="">Password</label>
+                    <i class='bx bxs-lock-alt absolute top-[50%] right-0 translate-y-[-50%] text-[18px]  text-teal-400 peer-focus:text-teal-400  peer-placeholder-shown:text-red-100' ></i>
+                </div>
+                <button class="relative w-[100%] h-[45px] bg-transparent bg-gradient-to-b from-teal-300 to-teal-950 border-2 border-solid border-teal-400 outline-none rounded-[40px] cursor-pointer text-[16px] text-red-50 font-semibold hover:from-teal-950 hover:to-teal-300" type="submit">Sign Up</button>
+                <div class="text-[14.5px] text-red-50 text-center mx-[20px] my-[10px]">
+                    <p>Already have an account? <a class="login text-teal-300 no-underline font-semibold hover:underline" href="#">Log In</a></p>
+                </div>
+            </form>
+        </div> -->
+        <!-- info text register  -->
+       <!-- <div class="absolute top-0 w-[50%] h-[100%] left-0 text-left pt-0 pr-[150px] pb-[60px] pl-[40px] flex flex-col justify-center hidden">
+        <h2 class="text-[36px] text-teal-50 leading-10 uppercase">Welcome Back!</h2>
+        <p class="text-[16px] text-teal-50 ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+       </div>  -->
     </div>
+
 </div>
 
 {% endblock %}
