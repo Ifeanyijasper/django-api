@@ -42,25 +42,28 @@
     $(".carousel").owlCarousel({
         margin: 10,
         loop: true,
+        dots:false,
+        nav:true,
+        navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
         autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1,
-                nav: false
+                // nav: false
             },
             480: {
                 items: 2,
-                nav: false
+                // nav: false
             },
             768: {
                 items: 3,
-                nav: false
+                // nav: false
             },
             1024: {
                 items: 4,
-                nav: false
+                // nav: false
             }
         }
     });
