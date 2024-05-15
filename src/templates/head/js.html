@@ -1,18 +1,36 @@
 {% load static %}
 <script type="module" src="{% static '/js/ionicons/ionicons.esm.js' %}"></script>
-<script nomodule src="{% static '/js/ionicons/ionicons.js' %}"></script>
+<!-- <script nomodule src="{% static '/js/ionicons/ionicons.js' %}"></script> -->
 <script src="{% static '/js/jquery.min.js' %}"></script>
 <script src="{% static '/js/owl.carousel.min.js' %}"></script>
-<script src="{% static '/js/login_signup.js' %}"></script>
+<!-- <script src="{% static '/js/login_signup.js' %}"></script> -->
 
 
 
 <script>
-    const navLinks = document.querySelector('.nav-links')
+    const navLinks = document.querySelector('nav-links')
     function Menu(e) {
         e.name = e.name === 'menu' ? 'close' : 'menu'
         navLinks.classList.toggle('top-[7%]')
     }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const register = document.getElementById('wrapper_register');
+    const login = document.getElementById('wrapper_login');
+    const flyout = document.getElementById('register_link');
+    const flyin = document.getElementById('login_link');
+
+    register.addEventListener('click', () => {
+        flyout.classList.toggle('hidden');
+        flyin.classList.toggle('hidden');
+    });
+    login.addEventListener('click', () => {
+        flyout.classList.toggle('hidden');
+        flyin.classList.toggle('hidden');
+    });
+  });
 </script>
 
 <script>

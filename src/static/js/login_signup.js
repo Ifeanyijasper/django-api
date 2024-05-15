@@ -1,7 +1,15 @@
-const wrapper = document.querySelector('.wrapper');
-const registerLink = document.querySelector('.register');
-const loginLink = document.querySelector('.login');
+document.addEventListener('DOMContentLoaded', () => {
+    const register = document.getElementById('wrapper_register');
+    const login = document.getElementById('wrapper_login');
+    const flyout = document.getElementById('register_link');
+    const flyin = document.getElementById('login_link');
 
-registerLink.onclick = () => {
-    wrapper.classList.add('active');
-}
+    register.addEventListener('click', () => {
+        flyout.classList.toggle('hidden');
+        flyin.classList.toggle('hidden');
+    });
+    login.addEventListener('click', () => {
+        flyout.classList.toggle('hidden');
+        flyin.classList.toggle('hidden');
+    });
+  });
