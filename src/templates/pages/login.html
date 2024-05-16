@@ -2,12 +2,12 @@
 {% load static %}
 
 {% block content %}
-<div class="font-serif box-border flex justify-center items-center min-h-[100vh]">
-    <div class="relative w-[750px] h-[450px] border-2 border-solid border-teal-300 shadow-2xl shadow-teal-200 overflow-hidden">
+<div class="font-serif box-border flex justify-center items-center min-h-[100vh] ">
+    <div class="relative w-[380px] md:w-[750px] h-[450px] border-2  border-solid border-teal-300 shadow-2xl shadow-teal-200 overflow-hidden">
         <div class="" id="register_link">
-            <span class="absolute top-[-4px] right-0 w-[850px] h-[600px] bg-teal-950 border-b-2 border-solid border-teal-400 rotate-[10deg] skew-y-[40deg] origin-bottom-right"></span>
+            <span class="md:absolute relative top-[-4px] right-0 w-[850px] h-[600px] bg-teal-950 border-b-2 border-solid border-teal-400 rotate-[10deg] skew-y-[40deg] origin-bottom-right"></span>
       
-            <div class="absolute top-0 w-[50%] h-[100%] flex flex-col justify-center left-0 pt-0 pr-[60px] pb-0 pl-[40px] wrapper ">
+            <div class="absolute top-0 w-[100] md:w-[50%] h-[100%] flex flex-col justify-center items-center md:left-0 pt-0 pr-[60px] pb-0 pl-[40px] ">
                 <h2 class="text-[32px] text-red-50 text-center translate-x-0 active:translate-x-[-120%] duration-700 ease-out">Login</h2>
                 <form method="#">
                     <div class="relative w-[100%] h-[50px] my-[25px]">
@@ -23,21 +23,22 @@
                     </div>
                     <button class="relative w-[100%] h-[45px] bg-transparent bg-gradient-to-b from-teal-300 to-teal-950 border-2 border-solid border-teal-400 outline-none rounded-[40px] cursor-pointer text-[16px] text-red-50 font-semibold hover:from-teal-950 hover:to-teal-300" type="submit">Log In</button>
                     <div class="text-[14.5px] text-red-50 text-center mx-[20px] my-[10px]">
-                        <p>Don't have an account? <span class="text-teal-300 no-underline font-semibold hover:underline" id="wrapper_register">Sign Up</span></p>
+                        <p>Don't have an account? <span class="text-teal-300 no-underline font-semibold hover:underline cursor-pointer" id="wrapper_register">Sign Up</span></p>
                     </div>
                 </form>
             </div>
-
-            <div class="absolute top-0 w-[50%] h-[100%] right-0 text-right pt-0 pr-[40px] pb-[60px] pl-[150px] flex flex-col justify-center ">
-                <h2 class="text-[36px] text-teal-50 leading-10 uppercase">Welcome Back!</h2>
-                <p class="text-[16px] text-red-50 ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div> 
+            <div class="hidden md:block">
+                <div class="absolute top-0 w-[50%] h-[100%] right-0 text-right pt-0 pr-[40px] pb-[60px] pl-[150px] flex flex-col justify-center ">
+                    <h2 class="text-[36px] text-teal-50 leading-10 uppercase">Welcome Back!</h2>
+                    <p class="text-[16px] text-red-50 ">Magic happens when you do not give up, even though you want to.</p>
+                </div> 
+            </div>
         </div>
         <!-- Register... -->
         <div class="hidden" id="login_link">
-            <span class="absolute top-[100%] left-64 w-[850px] h-[700px] bg-teal-950 border-t-2 border-solid border-teal-100 rotate-[-11deg] skew-y-[-41deg] origin-bottom-left"></span>
+            <span class="md:absolute relative top-[100%] left-64 w-[850px] h-[700px] bg-teal-950 border-t-2 border-solid border-teal-100 rotate-[-11deg] skew-y-[-41deg] origin-bottom-left"></span>
 
-            <div class="absolute top-0 w-[50%] h-[100%] flex flex-col justify-center right-0 pt-0 pr-[40px] pb-0 pl-[60px]">
+            <div class="absolute top-0 w-[100] md:w-[50%] h-[100%] flex flex-col justify-center items-center md:right-0 pt-0 pr-[40px] pb-0 pl-[60px]">
             <h2 class="text-[32px] text-teal-100 text-center">Sign Up</h2>
             <form method="#">
                 <div class="relative w-[100%] h-[50px] my-[25px]">
@@ -59,13 +60,15 @@
                 </div>
                 <button class="relative w-[100%] h-[45px] bg-transparent bg-gradient-to-b from-teal-300 to-teal-950 border-2 border-solid border-teal-400 outline-none rounded-[40px] cursor-pointer text-[16px] text-red-50 font-semibold hover:from-teal-950 hover:to-teal-300" type="submit">Sign Up</button>
                 <div class="text-[14.5px] text-red-50 text-center mx-[20px] my-[10px]">
-                    <p>Already have an account? <span class="login text-teal-300 no-underline font-semibold hover:underline" id="wrapper_login">Log In</span></p>
+                    <p>Already have an account? <span class="login text-teal-300 no-underline font-semibold hover:underline cursor-pointer" id="wrapper_login">Log In</span></p>
                 </div>
             </form>
             </div>
-            <div class="absolute top-0 w-[50%] h-[100%] left-0 text-left pt-0 pr-[150px] pb-[60px] pl-[40px] flex flex-col justify-center">
-                <h2 class="text-[36px] text-teal-50 leading-10 uppercase">Welcome Back!</h2>
-                <p class="text-[16px] text-teal-50 ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <div class="hidden md:block">
+                <div class="absolute top-0 w-[50%] h-[100%] left-0 text-left pt-0 pr-[150px] pb-[60px] pl-[40px] flex flex-col justify-center">
+                    <h2 class="text-[36px] text-teal-50 leading-10 uppercase">Welcome!</h2>
+                    <p class="text-[16px] text-teal-50 ">Nothing is more expensive than a missed opportunity.</p>
+                </div>
             </div>
         </div>
     </div>

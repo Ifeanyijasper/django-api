@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- body alike  -->
+<div>
+    <section class="py-5 h-[440px] xl:h-[680px] bg-[url('/static/img/career.png')] bg-center bg-cover bg-no-repeat bg-fixed lg:rounded-bl-[290px] relative z-20">
+        <div class="container flex flex-wrap items-center justify-center mx-auto mt-10 md:px-12 md:flex-row">
+            <div class="mb-14 mt-16 lg:mb-0 lg:w-1/2">
+                <h1 class="max-w-xl text-[2.9rem] leading-none text-teal-50 font-extrabold font-san text-center lg:text-5xl lg:text-left lg:leading-tight mb-5">
+                    Learn About Alma
+                </h1>
+                <p class="max-w-xl text-center text-teal-100 font-semibold lg:text-left lg:max-w-md mb-10">
+                    Improve students accessiblity to education with flexible time and prepare for competitive examinations.
+                </p>
+                <button class="h-16 px-[30px] transition-all duration-300 text-red-50 rounded-2xl flex items-center gap-2 mx-auto xl:mx-0 bg-rose-700 hover:bg-teal-950">
+                    <span class="">
+                        Start Learning Now!
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                </button>
+            </div>
+            <div class="lg:w-1/2">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full bg-teal-500 lg:rounded-tl-[290px] shadow-lg">
+        <div class="container  m-auto px-3 py-8 max-w-[1200px]">
+            <div class="grid xl:grid-cols-2 text-center justify-items-center gap-0">
+            <!-- <div class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"> -->
+                <div class="order-2 xl:order-1 flex-1 max-w-xl xl:max-w-[410px]">
+                    <h2 class="text-[40px] lg:text-[55px] leading-none">We keep you focused on you goals</h2>
+                    <p class="text-start">
+                        Help institutions, schools, organisations to accomplish their dreams of higher education,
+                        We help them get the education they seek for without barrier. Civil server can now study while 
+                        keeping their job. Education is no longer bounded the four walls of classroom.
+
+                    </p>
+                    <div class="flex items-center justify-center xl:justify-start gap-4">
+                        <div class="bg-red-300 w-[40px] h-[40px] rounded-full flex justify-center items-center">
+                            <div><ion-icon name="call" class="text-red-500 text-2xl"></ion-icon></div>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-xl font-bold">+237 690 848 363</div>
+                            <div>Call us Anytime</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[453px] order-1 xl:order-2 mx-auto xl:max-w-none xl:mx-0">
+                    <img class="h-[400px] w-[400px] rounded-tr-[100px] rounded-bl-[80px]" src="{% static 'img/about.png' %}" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="w-full">
+        <div class="container  m-auto px-3 py-8 max-w-[1200px]">
+            What teacher say
+        </div>
+    </section>
+    <div class="h-[3000px]"></div>
+</div>
+
+
+{% endblock %}
