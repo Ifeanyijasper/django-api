@@ -89,3 +89,34 @@
         }
     });
 </script>
+
+<script>
+    $(".testi").owlCarousel({
+        margin: 10,
+        loop: true,
+        dots:true,
+        // nav:true,
+        // navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+        // autoplay: true,
+        // autoplayTimeout: 2000,
+        // autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+                // nav: false
+            },
+            480: {
+                items: 2,
+                // nav: false
+            },
+            768: {
+                items: 3,
+                // nav: false
+            },
+            1024: {
+                items: 3,
+                // nav: false
+            }
+        }
+    });
+</script>
