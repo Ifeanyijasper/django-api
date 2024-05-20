@@ -4,9 +4,9 @@
 {% block content %}
 <!-- body alike  -->
 <div>
-    <section class="py-5 h-[440px] xl:h-[680px] bg-[url('/static/img/career.png')] bg-center bg-cover bg-no-repeat bg-fixed lg:rounded-bl-[290px] relative -z-20">
+    <section class="hero py-5 h-[440px] xl:h-[680px] bg-[url('/static/img/career.png')] bg-center bg-cover bg-no-repeat bg-fixed lg:rounded-bl-[290px] relative -z-20">
         <div class="container flex flex-wrap items-center justify-center mx-auto mt-10 md:px-12 md:flex-row">
-            <div class="mb-14 mt-16 lg:mb-0 lg:w-1/2">
+            <div class="hero__text mb-14 mt-16 lg:mb-0 lg:w-1/2">
                 <h1 class="max-w-xl text-[2.9rem] leading-none text-teal-50 font-extrabold font-san text-center lg:text-5xl lg:text-left lg:leading-tight mb-5">
                     Learn About Alma
                 </h1>
@@ -28,8 +28,7 @@
     <section class="w-full bg-teal-500 lg:rounded-tl-[290px] shadow-lg mb-8">
         <div class="container  m-auto px-3 py-8 max-w-[1200px]">
             <div class="grid xl:grid-cols-2 text-center justify-items-center gap-0">
-            <!-- <div class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"> -->
-                <div class="order-2 xl:order-1 flex-1 max-w-xl xl:max-w-[410px]">
+                <div class="about_text order-2 xl:order-1 flex-1 max-w-xl xl:max-w-[410px]">
                     <h2 class="text-[40px] lg:text-[55px] leading-none">We keep you focused on you goals</h2>
                     <p class="text-start">
                         Help institutions, schools, organisations to accomplish their dreams of higher education,
@@ -47,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="max-w-[453px] order-1 xl:order-2 mx-auto xl:max-w-none xl:mx-0">
+                <div class="about_img max-w-[453px] order-1 xl:order-2 mx-auto xl:max-w-none xl:mx-0">
                     <img class="h-[400px] w-[400px] rounded-tr-[100px] rounded-bl-[80px]" src="{% static 'img/about.png' %}" alt="">
                 </div>
             </div>
@@ -55,12 +54,12 @@
         </div>
     </section>
 
-    <section class="w-full mb-8">
-        <div class="container  m-auto px-3 py-8 max-w-[1200px] bg-teal-400 rounded-[70px]">
+    <section class="w-full mb-2">
+        <div class="testimonial__bg container  m-auto px-3 py-8 max-w-[1200px] bg-teal-400  rounded-t-[70px]">
             <div class="flex flex-col items-center">
-                <h2 class="text-3xl leading-tight mb-9 text-center">What Teachers and Students Say:</h2>
+                <h2 class="testimonial__title text-3xl leading-tight mb-9 text-center ">What Teachers and Students Say:</h2>
                 <div class="w-full">
-                    <div class="testi owl-carousel owl-theme">
+                    <div class="testimonial__slider testi owl-carousel owl-theme">
                         <div class="w-full max-w-[370px] h-[300px] bg-red-50 rounded-[30px] justify-center flex flex-col p-9 mx-auto">
                             <div class="text-center gap-4 mb-4 font-semibold text-lg items-center">By A Teacher </div>
                             <p class="font-sans text-base mb-6 items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi in fuga praesentium!</p>
@@ -134,34 +133,115 @@
     </section>
 
     <section class="w-full mb-8">
+        <div class="testimonial__form_bg container  m-auto px-3 py-8 max-w-[1200px] bg-teal-500 rounded-b-[70px]">
+            <div class="flex flex-col items-center">
+                <h2 class="testimonial__form_title text-3xl leading-tight mb-9 text-center ">Give us your feedback</h2>
+                <div class="testimonial__form w-full">
+                    <form action="">
+                        <div class="flex items-center justify-center gap-4 mb-2">
+                            <label class="cursor-pointer">
+                                <input type="radio" class="peer sr-only" name="teacher">
+                                <div class="p-2 bg-red-50 text-teal-950 rounded-md hover:shadow ring-2 ring-transparent peer-checked:text-red-600 peer-checked:ring-red-400 peer-checked:ring-offset-2 transition-all">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-base font-semibold uppercase text-teal-950">Teacher</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" class="peer sr-only" name="teacher">
+                                <div class="p-2 bg-red-50 text-teal-950 rounded-md hover:shadow ring-2 ring-transparent peer-checked:text-red-600 peer-checked:ring-red-400 peer-checked:ring-offset-2 transition-all">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-base font-semibold uppercase text-teal-950">Student</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <div class="my-1">
+                           <input type="text" class="mt-0 w-full py-1 px-3 h-7 rounded outline-none border border-teal-950 focus:border-rose-600 focus:ring-0" placeholder=" Your Name" />
+                        </div>
+                        <div class="my-1">               
+                          <textarea class="mt-0 w-full py-1 px-3 h-24 rounded outline-none border border-teal-950 focus:border-rose-600 focus:ring-0"  placeholder="Message"></textarea>
+                        </div>
+                        
+                        <input type="submit" class="py-2 px-5 tracking-wide border duration-500 text-base text-center bg-rose-700 hover:bg-teal-950 border-rose-600 hover:border-rose-600 text-teal-50 rounded-md w-full">
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stats w-full mb-8 ">
         <div class="container  mx-auto px-3 py-8 max-w-[1400px] shadow-md">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 ">
-                    <div class="text-center lg:border-r lg:border-teal-50">
-                        <h3 class="text-[64px] lg:text-[84px] leading-none text-red-200">148K+</h3>
+                    <div class=" stats__item text-center lg:border-r lg:border-teal-50">
+                        <h3 class="text-[64px] lg:text-[84px] leading-none text-red-100">148K+</h3>
                         <p class="text-4xl">Students</p>
                     </div>
     
-                    <div class="text-center lg:border-r lg:border-teal-50">
-                        <h3 class="text-[64px] lg:text-[84px] leading-none text-red-200">45+</h3>
+                    <div class="stats__item text-center lg:border-r lg:border-teal-50">
+                        <h3 class="text-[64px] lg:text-[84px] leading-none text-red-100">45+</h3>
                         <p class="text-4xl">Teachers</p>
                     </div>
 
-                    <div class="text-center">
-                        <h3 class="text-[64px] lg:text-[84px] leading-none text-red-200">20+</h3>
+                    <div class="stats__item text-center">
+                        <h3 class="text-[64px] lg:text-[84px] leading-none text-red-100">20+</h3>
                         <p class="text-4xl">Subjects</p>
                     </div>
             </div>
         </div>
     </section>
 
-    <section class="w-full">
-        <div class="container  mx-auto px-3 py-8 max-w-[1400px] bg-teal-500 rounded">
-           Latest Updates 
+    <section class="news w-full mb-8">
+        <div class="container  m-auto px-3 py-8 max-w-[1400px] bg-teal-500">
+            <div class="flex flex-col items-center">
+                <h2 class="news__title text-5xl leading-tight mb-9 text-center text-red-50">News & Articles</h2>
+                <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-2">
+
+                        <div class="news__item w-full max-w-[370px] h-[450px] bg-red-50 rounded-[30px] hover:bg-red-100 justify-center flex flex-col p-5 mx-auto transition-all cursor-pointer mx:-auto xl:mx-0">
+                            <img class="h-[290px] w-[340px] rounded-tr-[60px] rounded-tl-[60px]" src="{% static 'img/teach_news.jfif' %}" alt="">
+                            <p class="text-lg mb-4 items-center font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi in fuga praesentium!</p>
+                            <div class="flex items-center justify-between">
+                                <p class="text-base">22 June,2024</p>
+                                <button class="bg-red-200 w-10 h-10 rounded-full group-hover:bg-red-50 transition-all">
+                                    <ion-icon name="chevron-forward-outline" class="text-3xl text-teal-950 pl-1"></ion-icon>
+                                </button>
+                            </div>
+                        </div>  
+                        
+                        <div class="news__item w-full max-w-[370px] h-[450px] bg-red-50 rounded-[30px] hover:bg-red-100 justify-center flex flex-col p-5 mx-auto transition-all cursor-pointer mx:-auto xl:mx-0">
+                            <img class="h-[290px] w-[340px] rounded-tr-[60px] rounded-tl-[60px]" src="{% static 'img/teach_news2.jfif' %}" alt="">
+                            <p class="text-lg mb-4 items-center font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi in fuga praesentium!</p>
+                            <div class="flex items-center justify-between">
+                                <p class="text-base">22 June,2024</p>
+                                <button class="bg-red-200 w-10 h-10 rounded-full group-hover:bg-red-50 transition-all">
+                                    <ion-icon name="chevron-forward-outline" class="text-3xl text-teal-950 pl-1"></ion-icon>
+                                </button>
+                            </div>
+                        </div> 
+
+                        <div class="news__item w-full max-w-[370px] h-[450px] bg-red-50 rounded-[30px] hover:bg-red-100 justify-center flex flex-col p-5 mx-auto transition-all cursor-pointer mx:-auto xl:mx-0">
+                            <img class="h-[290px] w-[340px] rounded-tr-[60px] rounded-tl-[60px]" src="{% static 'img/teach_news3.jfif' %}" alt="">
+                            <p class="text-lg mb-4 items-center font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi in fuga praesentium!</p>
+                            <div class="flex items-center justify-between">
+                                <p class="text-base">22 June,2024</p>
+                                <button class="bg-red-200 w-10 h-10 rounded-full group-hover:bg-red-50 transition-all">
+                                    <ion-icon name="chevron-forward-outline" class="text-3xl text-teal-950 pl-1"></ion-icon>
+                                </button>
+                            </div>
+                        </div>   
+                </div>
+            </div>
         </div>
     </section>
- 
-
-    <div class="h-[300px]"></div>
 </div>
 
 

@@ -3,7 +3,7 @@
 <script nomodule src="{% static '/js/ionicons/ionicons.js' %}"></script>
 <script src="{% static '/js/jquery.min.js' %}"></script>
 <script src="{% static '/js/owl.carousel.min.js' %}"></script>
-<!-- <script src="{% static '/js/login_signup.js' %}"></script> -->
+<script src="{% static '/js/scrollreveal.min.js' %}"></script>
 
 
 
@@ -95,28 +95,54 @@
         margin: 10,
         loop: true,
         dots:true,
-        // nav:true,
-        // navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
-        // autoplay: true,
-        // autoplayTimeout: 2000,
-        // autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1,
-                // nav: false
             },
             480: {
                 items: 2,
-                // nav: false
             },
             768: {
                 items: 3,
-                // nav: false
             },
             1024: {
                 items: 3,
-                // nav: false
             }
         }
     });
+</script>
+
+
+<script>
+    const sr = ScrollReveal({
+        origin: 'bottom',
+        distance: '60px',
+        duration: 3000,
+        delay: 0,
+        // reset: true,
+    });
+
+
+    sr.reveal('.hero__text',{origin:'top'});
+
+    sr.reveal('.about_text',{origin:'left'});
+    sr.reveal('.about_img',{origin:'right', delay: 300});
+
+    sr.reveal('.testimonial__bg',{delay: 300});
+    sr.reveal('.testimonial__title');
+    sr.reveal('.testimonial__slider',{origin:'right',delay: 300});
+    
+    sr.reveal('.testimonial__form_bg',{delay: 400});
+    sr.reveal('.testimonial__form_title');
+    sr.reveal('.testimonial__form',{delay: 400});
+
+    sr.reveal('.stats');
+    sr.reveal('.stats__item',{distance: '100px', interval: 300});
+    
+    sr.reveal('.news__title');
+    sr.reveal('.news__item',{distance: '100px', interval: 300, delay:400});
+
+
+
+
 </script>
